@@ -1,23 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Document metadata and basic setup -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page title shown in the browser tab -->
     <title>Pricing Plans — HTML version</title>
+    <!-- Preconnect hints so Google Fonts load faster -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Inter font family used across the page -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Main stylesheet controlling layout and visual style -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Fixed label describing this static HTML version -->
     <p class="page-label"><strong>HTML version</strong> — static markup</p>
+
+    <!-- Horizontal container holding all pricing cards -->
     <div class="cards-container">
+
+        <!-- Hobby plan card: free starter option -->
         <div class="card">
             <div class="card-top">
+                <!-- Plan name -->
                 <h3 class="card-title">Hobby</h3>
+
+                <!-- Price row (text only for this free plan) -->
                 <p class="card-price">
                     <span class="card-price-amount">Free</span>
                 </p>
+
+                <!-- Feature list for Hobby plan -->
                 <div class="card-content">
                     <p class="includes-text">Includes:</p>
                     <ul class="features-list">
@@ -36,15 +51,24 @@
                     </ul>
                 </div>
             </div>
+
+            <!-- Secondary-style button used for the free plan action -->
             <button class="download-button secondary">Download</button>
         </div>
+
+        <!-- Pro plan card: primary, paid option -->
         <div class="card">
             <div class="card-top">
+                <!-- Plan name -->
                 <h3 class="card-title">Pro</h3>
+
+                <!-- Price row with amount and billing period -->
                 <p class="card-price">
                     <span class="card-price-amount">$20</span>
                     <span class="card-price-period">/mo.</span>
                 </p>
+
+                <!-- Feature list for Pro plan, building on Hobby -->
                 <div class="card-content">
                     <p class="includes-text">Everything in Hobby, plus:</p>
                     <ul class="features-list">
@@ -67,6 +91,8 @@
                     </ul>
                 </div>
             </div>
+
+            <!-- Primary-style button used for the main upgrade action -->
             <button class="download-button primary">Get Pro</button>
         </div>
     </div>
