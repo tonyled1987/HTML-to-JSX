@@ -150,6 +150,20 @@ body {
     background-color: #333;
 }
 
+.download-button.tertiary {
+    background-color: transparent;
+    border: 1px solid #c2c1ba;
+    color: #333;
+}
+
+.download-button.tertiary:hover {
+    background-color: #dbdbd7;
+}
+
+.download-button.tertiary:active {
+    background-color: #dbdbd7;
+}
+
 /* Fixed label styling for the "HTML version" badge */
 .page-label {
     position: fixed;
